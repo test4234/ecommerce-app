@@ -1,0 +1,53 @@
+/* Navbar basic styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #fff;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  height: 60px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Sidebar styling (hidden by default) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Start off-screen */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease-in-out; /* Sliding effect */
+  padding: 20px;
+}
+
+.sidebar.open {
+  left: 0; /* Slide into view */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #444;
+}
+
+/* Menu bar icon styling */
+.nav-right {
+  cursor: pointer;
+  font-size: 24px;
+}

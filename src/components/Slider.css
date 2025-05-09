@@ -1,0 +1,9 @@
+.slider {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 8px;
+}
